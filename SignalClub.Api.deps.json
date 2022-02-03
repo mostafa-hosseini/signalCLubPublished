@@ -34,6 +34,8 @@
       "SignalClub.Api/1.0.0": {
         "dependencies": {
           "AspNetCore.Http.Extensions": "1.0.1",
+          "HtmlAgilityPack": "1.11.40",
+          "HtmlAgilityPack.NetCore": "1.5.0.1",
           "LazZiya.TagHelpers": "6.0.1",
           "Microsoft.AspNet.SignalR": "2.4.2",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.11",
@@ -323,7 +325,7 @@
           "System.Xml.XDocument.Reference": "5.0.0.0",
           "System.Xml.XmlDocument.Reference": "5.0.0.0",
           "System.Xml.XmlSerializer.Reference": "5.0.0.0",
-          "System.Xml.XPath": "5.0.0.0",
+          "System.Xml.XPath.Reference": "5.0.0.0",
           "System.Xml.XPath.XDocument": "5.0.0.0",
           "WindowsBase": "4.0.0.0"
         },
@@ -1696,7 +1698,7 @@
           "System.Xml.XmlSerializer.dll": {}
         }
       },
-      "System.Xml.XPath/5.0.0.0": {
+      "System.Xml.XPath.Reference/5.0.0.0": {
         "compile": {
           "System.Xml.XPath.dll": {}
         }
@@ -1717,6 +1719,27 @@
         },
         "compile": {
           "lib/netstandard2.0/AspNetCore.Http.Extensions.dll": {}
+        }
+      },
+      "HtmlAgilityPack/1.11.40": {
+        "compile": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {}
+        }
+      },
+      "HtmlAgilityPack.NetCore/1.5.0.1": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Xml.XPath": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/HtmlAgilityPack.NetCore.dll": {}
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -3519,6 +3542,19 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "System.Xml.XPath/4.0.1": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Xml.ReaderWriter": "4.3.0"
+        }
+      },
       "SignalClub.Common/1.0.0": {
         "dependencies": {
           "AspNetCore.Http.Extensions": "1.0.1",
@@ -3536,6 +3572,8 @@
       "SignalClub.Api/1.0.0": {
         "dependencies": {
           "AspNetCore.Http.Extensions": "1.0.1",
+          "HtmlAgilityPack": "1.11.40",
+          "HtmlAgilityPack.NetCore": "1.5.0.1",
           "LazZiya.TagHelpers": "6.0.1",
           "Microsoft.AspNet.SignalR": "2.4.2",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.11",
@@ -3825,7 +3863,7 @@
           "System.Xml.XDocument.Reference": "5.0.0.0",
           "System.Xml.XmlDocument.Reference": "5.0.0.0",
           "System.Xml.XmlSerializer.Reference": "5.0.0.0",
-          "System.Xml.XPath": "5.0.0.0",
+          "System.Xml.XPath.Reference": "5.0.0.0",
           "System.Xml.XPath.XDocument": "5.0.0.0",
           "WindowsBase": "4.0.0.0"
         },
@@ -3841,6 +3879,33 @@
           "lib/netstandard2.0/AspNetCore.Http.Extensions.dll": {
             "assemblyVersion": "1.0.1.0",
             "fileVersion": "1.0.1.0"
+          }
+        }
+      },
+      "HtmlAgilityPack/1.11.40": {
+        "runtime": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {
+            "assemblyVersion": "1.11.40.0",
+            "fileVersion": "1.11.40.0"
+          }
+        }
+      },
+      "HtmlAgilityPack.NetCore/1.5.0.1": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Xml.XPath": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/HtmlAgilityPack.NetCore.dll": {
+            "assemblyVersion": "1.5.0.1",
+            "fileVersion": "1.5.0.1"
           }
         }
       },
@@ -6046,6 +6111,19 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "System.Xml.XPath/4.0.1": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Xml.ReaderWriter": "4.3.0"
+        }
+      },
       "SignalClub.Common/1.0.0": {
         "dependencies": {
           "AspNetCore.Http.Extensions": "1.0.1",
@@ -6072,6 +6150,20 @@
       "sha512": "sha512-FZyUSh3r9DpEFu+qognOZYgOtMK/PC5X1oqoShqK9KIaIJ9kbqgyFEs54zWAKHj52s+FignNpTc2K9pFxUADIw==",
       "path": "aspnetcore.http.extensions/1.0.1",
       "hashPath": "aspnetcore.http.extensions.1.0.1.nupkg.sha512"
+    },
+    "HtmlAgilityPack/1.11.40": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-55VAT1E4c53Omzqfiph/hfUmuVobJvKCSIrVVx1UCtBybouBp+vv1sj+5C+Ip/bDycF9XITrjC0Cdz5Ux+iw5w==",
+      "path": "htmlagilitypack/1.11.40",
+      "hashPath": "htmlagilitypack.1.11.40.nupkg.sha512"
+    },
+    "HtmlAgilityPack.NetCore/1.5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UaLQtf8QMM1cxUDPMMBcrgX3A/56P+y4mHidgWaoiieaEG9eyODVRIKt6cQtBZaHLOVX3abGdMGVk2RnlWUAOw==",
+      "path": "htmlagilitypack.netcore/1.5.0.1",
+      "hashPath": "htmlagilitypack.netcore.1.5.0.1.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",
@@ -7704,6 +7796,13 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
+    "System.Xml.XPath/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UWd1H+1IJ9Wlq5nognZ/XJdyj8qPE4XufBUkAW59ijsCPjZkZe0MUzKKJFBr+ZWBe5Wq1u1d5f2CYgE93uH7DA==",
+      "path": "system.xml.xpath/4.0.1",
+      "hashPath": "system.xml.xpath.4.0.1.nupkg.sha512"
+    },
     "SignalClub.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -9074,7 +9173,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Xml.XPath/5.0.0.0": {
+    "System.Xml.XPath.Reference/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
