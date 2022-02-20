@@ -1,71 +1,297 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+﻿@media only screen and (max-width: 500px) {
+    .filter-container {
+        position: relative !important;
+        left: -14px !important;
+        top: 20px
+    }
 }
 
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
+.aditem {
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 5px 15px #e1e1e1;
+    width: 100%;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.img-ad {
+    width: 100%;
+    align-self: center;
+    border-radius: 7px;
+    height: 300px;
+    position: relative;
+    object-fit: cover;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.ad-img-wrapper {
+    position: relative;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    .ad-img-wrapper::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 27%, rgba(0, 0, 0, 1) 100%);
+        z-index: 1;
+    }
+
+.aditem .ad-img-wrapper .badge-wrapper {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
 }
 
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+.badge-wrapper img {
+    width: 100%;
+    height: 100%;
 }
 
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+.badge-wrapper .icon-badge {
+    background-color: #2196f3;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 5px;
 }
 
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+.badge-wrapper .main-badge {
+    width: 50px;
+    height: 100px;
+    position: relative;
+    bottom: 26px;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
+.off-badge {
+    position: absolute;
+    left: 0;
+    top: 75px;
+    padding: 0.5rem 1rem;
+    background-color: #ed3237;
+    color: #fff;
+    border-radius: 0 15px 15px 0;
 }
 
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+.ad-title.abslute-title {
+    z-index: 2;
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+
+.ad-title {
+    font-family: IRANSans;
+    text-align: right;
+    padding: 0 15px;
+    margin: 0px !important;
+}
+
+.row {
+    display: flex;
+}
+
+.text-price {
+    padding: 0 0px;
+    text-align: right !important;
+}
+
+.badge-danger {
+    padding: 0px 15px;
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+}
+
+.badge-success {
+    padding: 3px 10px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.text-right {
+    text-align: right;
+    font-family: IRANSans;
+}
+
+/* .btn-primary {
+    padding: 5px 15px;
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+    font-family: IRANSans;
+    border: 0px;
+} */
+
+.w-100 {
+    width: 100%;
+}
+
+.box {
+    background-color: #fff;
+    padding: 1em;
+    position: relative;
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 1.7;
+    margin-bottom: 1em;
+    box-shadow: 0 5px 15px #e1e1e1;
+    overflow: hidden;
+    height: 100%;
+}
+
+.img-news {
+    border-radius: 10px;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    max-height: 500px;
+}
+
+
+
+footer .social-menu li {
+    float: left;
+    margin: 0 4px 0 4px;
+    padding: 0 10px 0 10px;
+    height: 75px;
+    line-height: 75px;
+    width: 16px;
+}
+/* 
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+} */
+
+.w-100 {
+    width: 100% !important;
+}
+
+.text-dark {
+    color: black;
+    font-size: 17px;
+    font-weight: bold !important;
+}
+
+.location {
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.box-white {
+    background-color: #ffff;
+    border: 1px solid #828282;
+    padding: 1em;
+    position: relative;
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 1.7;
+    margin-top: 0px !important;
+    margin-bottom: 1em;
+}
+
+.icon-ad {
+    width: 25px;
+    height: 25px;
+}
+
+.cityId {
+    justify-content: right;
+    flex-direction: row-reverse;
+    margin-top: 5px;
+}
+
+.aditem hr {
+    border-color: #f1f1f1;
+}
+
+.aditem .items-wrapper {
+    border-top: 1px solid #e0dbdb;
+    padding-top: 10px;
+}
+
+.items-wrapper .ad-title {
+    color: #353434;
+    font-weight: 500;
+}
+
+.cityId .ad-title {
+    padding-right: 5px;
+}
+
+.bg-blue {
+    background-color: #326ad1 !important;
+}
+
+
+.vip-badge {
+    position: absolute;
+    top: 12px;
+    right: 40px;
+}
+
+.text-center {
+    text-align: center;
+    ;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.abslute-title {
+    position: absolute;
+    bottom: 5px;
+    color: white;
+    right: 0;
+    font-size: 1.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.abslute-title-vizhe {
+    position: absolute;
+    bottom: 165px;
+    color: white;
+    right: 10px;
+    font-size: 23px;
+}
+
+.phone {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 3px 3px;
+    background-color: red;
+    color: white;
+    border-radius: 15px;
 }
