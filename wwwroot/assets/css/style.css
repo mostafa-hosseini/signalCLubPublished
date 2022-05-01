@@ -3869,3 +3869,17 @@ footer
     margin-top: 4rem;
   }
 }
+.videoItem {
+    background-color: #f0f7fc;
+}
+div .image img {
+    border-radius: 2rem;
+}
+.videoPlayer {
+    position: absolute !important;
+    z-index: 9999999999;
+    top: 134px;
+    color: red;
+    padding-top: 10rem;
+    font-size: 2rem;
+}
