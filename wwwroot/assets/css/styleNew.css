@@ -1069,31 +1069,19 @@ blog single
 
 @media (max-width: 575.98px) {
     .blog_single__comment--single .image {
-        width: 7rem;
-        height: 7rem;
+        width: 10rem;
+        height: 10rem;
     }
 }
 
 .blog_single__comment--single .comment {
     width: calc(100% - 11rem);
     border: 4px solid #f0f7fc;
-    padding: 3.6rem 4rem;
     border-radius: 2rem;
     position: relative;
 }
 
-    .blog_single__comment--single .comment::before {
-        content: "";
-        display: block;
-        position: absolute;
-        background-image: url(../images/comment-corner.png);
-        background-repeat: no-repeat;
-        width: 2.2rem;
-        height: 1.9rem;
-        background-size: cover;
-        top: -0.4rem;
-        right: -1.3rem;
-    }
+   
 
     .blog_single__comment--single .comment .name {
         font-size: 2rem;
@@ -1160,7 +1148,7 @@ blog single
 @media (max-width: 575.98px) {
     .blog_single__comment--single .comment {
         width: calc(100% - 8rem);
-        padding-top: 6rem;
+     
     }
 }
 
@@ -1170,12 +1158,10 @@ blog single
 }
 
     .blog_single__comment--single.reply .comment {
-        background-color: #f0f7fc;
+        background-color: #ffaa80;
     }
 
-        .blog_single__comment--single.reply .comment::before {
-            background-image: url(../images/reply-corner.png);
-        }
+       
 
         .blog_single__comment--single.reply .comment .reply-button {
             background-color: white;
@@ -4066,7 +4052,9 @@ div .image img {
     background: #FF7D3B;
     border-radius: 15px;
 }
-
+.br-15 {
+    border-radius: 15px !important;
+}
 .h-100vh {
     height: 100vh !important;
 }
@@ -4077,6 +4065,7 @@ div .image img {
     max-height: 700px;
     z-index: -10;
     position: fixed;
+    top: 150px;
     bottom: 0;
     right: 0;
 }
@@ -4118,3 +4107,22 @@ div .image img {
     background: gray;
     margin-top: 15px;
 } */
+.bg-custom {
+    background-color: #572cd8 !important;
+    border: 0px solid #e2e2e2 !important;
+}
+
+.btn-outline-custom {
+    background: transparent !important;
+    border-radius: 15px;
+    border: 3px solid #FF7D3B;
+}
+
+.set-height {
+    height: 50vh;
+}
+
+.set-height-25 {
+    height:25vh;
+}
+
