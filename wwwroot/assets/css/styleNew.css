@@ -4040,11 +4040,9 @@ div .image img {
 }
 
 .custom-slider {
-    /*    background-color: red;*/
     border: 2px solid #e2e2e2;
     border-radius: 25px;
     overflow: hidden;
-    max-height: 50vh;
 }
 
 .btn-custom {
@@ -4198,4 +4196,12 @@ input:checked + .slider:before {
     position: absolute;
     bottom: 15px;
     right: 25%;
+}
+.img-slider {
+/*    background-position: center;*/
+    height: 100%;
+
+}
+.carousel-item {
+    height: 50vh !important;
 }

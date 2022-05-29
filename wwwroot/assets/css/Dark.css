@@ -30577,3 +30577,112 @@ div .image img {
 .set-height-25 {
     height: 25vh;
 }
+.header.fixed {
+    position: fixed;
+    top: 0;
+    background-color: #572cd8;
+}
+
+@media (max-width: 991.98px) {
+    .header__wrapper {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    .header__nav {
+        height: 100vh;
+        width: 85%;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        overflow: auto !important;
+        background: #572cd8;
+        -webkit-transition: all .25s ease;
+        transition: all .25s ease;
+        padding-top: 15%;
+    }
+
+        .header__nav ul {
+            display: block;
+            width: 100%;
+            margin-top: 5rem;
+        }
+
+        .header__nav li {
+            display: block;
+            width: 100%;
+            -webkit-transition: all .25s ease;
+            transition: all .25s ease;
+        }
+
+            .header__nav li a {
+                font-size: 2rem;
+                padding: 2.1rem 1rem;
+                display: block;
+                width: 100%;
+                -webkit-transition: all .25s ease;
+                transition: all .25s ease;
+                color: white;
+            }
+
+            .header__nav li i {
+                color: white;
+            }
+
+            .header__nav li:nth-child(n+2) {
+                margin-right: 0;
+            }
+
+            .header__nav li:hover {
+                background-color: white;
+            }
+
+                .header__nav li:hover a,
+                .header__nav li:hover i {
+                    color: #9341d4;
+                }
+
+        .header__nav .nav__dropdown-info {
+            padding-right: 1rem;
+        }
+
+        .header__nav .nav__dropdown-box {
+            position: absolute;
+            width: 100%;
+            border-radius: initial;
+            border: 0;
+        }
+
+            .header__nav .nav__dropdown-box::before {
+                display: none;
+            }
+
+            .header__nav .nav__dropdown-box li a {
+                font-size: 1.8rem;
+            }
+
+            .header__nav .nav__dropdown-box.shown {
+                top: 2rem;
+            }
+
+        .header__nav span {
+            display: block;
+        }
+
+    .header__nav-primary {
+        margin-right: 0;
+    }
+
+    .header__nav .social {
+        display: none;
+    }
+
+    .header__bars {
+        display: block;
+    }
+}
+.carousel-item {
+    height: 50vh !important;
+}
